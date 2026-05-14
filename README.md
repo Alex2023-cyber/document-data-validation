@@ -39,6 +39,25 @@ Or manually copy `SKILL.md` to `~/.qoderwork/skills/document-data-validation/`.
 - **Keep hypothetical examples** — scenario story placeholders are not data claims
 - **Allow derived conclusions** — reasonable analytical inferences from source data are acceptable
 
+## Example
+
+**Before validation:**
+
+> 推荐→加购仅 2.8%，说明当前推荐效率极低。Kimi 式逐步刷墙（屏效 25%）中间过程挤占结果空间。
+
+**After validation** (source confirms 2.8% but has no "25% screen efficiency" data):
+
+> 推荐→加购仅 2.8%，说明当前推荐效率极低。Kimi 式逐步刷墙（中间过程挤占结果空间）效率低下。
+
+The `2.8%` is kept because it matches the source. The fabricated `25%` is converted to descriptive language.
+
+## Files
+
+| File | Description |
+|------|-------------|
+| `SKILL.md` | The skill definition — contains the full workflow, pitfalls, and verification steps |
+| `README.md` | This file — project overview and installation guide |
+
 ## License
 
 MIT
